@@ -6,7 +6,7 @@ def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
     in an array sorted in ascending order.
     
     Parameters
-    ----------
+    ---------- 
     da_array : list
         a list of "comparable"items sorted in non-descending order
     needle: an item to find in the array; it may or may not
