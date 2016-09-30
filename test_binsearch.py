@@ -21,14 +21,24 @@ class Test(unittest.TestCase):
 	def unsortedList(self):
 		self.assertEqual(binary_search([1,6,2,9,8], 9), 3)
 
-	def noElement(self:
+	def noElement(self):
 		self.assertEqual(binary_search([], 1), -1)
 	
-	def singleElement(self:
+	def singleElement(self):
 		self.assertEqual(binary_search([1], 1), 0)
 
-	def sameElements(self:
+	def sameElements(self):
 		self.assertEqual(binary_search([1,2,5,6,7,8,2,2], 2), 7)
+
+	def needleTest1(self):
+		self.assertEqual(binary_search([1,2,3,4,5], 3,1,2), -1)
+
+	def needleTest2(self):
+		self.assertEqual(binary_search([1,2,3,4,5], 3,1,4), 2)
+
+	def needleTest3(self):
+		self.assertEqual(binary_search([1,2,3,4,5], 3,3,4), -1o
+)
 	
 	
 
