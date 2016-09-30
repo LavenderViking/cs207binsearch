@@ -9,11 +9,12 @@ class Test(unittest.TestCase):
 	def foundElement(self):
 		self.assertEqual(binary_search(list(range(5), 2), 2)
 
+	def notFoundElement(self):
+		self.assertEqual(binary_search(list(range(5), 7), -1)
 
-
-	#def notFoundElement(self):
-	#	self.assertEqual(binary_search(list(range(5), 7), -1)
-
+	def foundElement(self):
+		self.assertEqual(binary_search(list(range(10), 5,1,9), 1)
+	
 
 t = unittest.TestLoader().loadTestsFromModule(Test())
 unittest.TextTestRunner().run(t)
