@@ -51,7 +51,7 @@ class Test(unittest.TestCase):
 	def notArray(self):
 		try:
 			self.assertEqual(binary_search('1 2 3 4 dad 5 6 7 8',5), 5)
-		expect:
+		except:
 			print("Please input an array!")
 			
 	
