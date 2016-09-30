@@ -38,7 +38,7 @@ class Test(unittest.TestCase):
 
 	def needleTest3(self):
 		self.assertEqual(binary_search([1,2,3,4,5], 3,3,4), -1)
-)
+
 	
 	
 
