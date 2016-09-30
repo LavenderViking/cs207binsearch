@@ -1,6 +1,6 @@
 import unittest
+import numpy as n
 from pytest import raises
-import numpy as np
 from binsearch import binary_search
 
 
@@ -8,6 +8,10 @@ class Test(unittest.TestCase):
 
 	def foundElement(self):
 		self.assertEqual(binary_search(list(range(5), 2), 2)
+
+	def notFoundElement(self):
+		self.assertEqual(binary_search(list(range(5), 7), -1)
+
 
 ttest = unittest.TestLoader().loadTestsFromModule(MyTest())
 unittest.TextTestRunner().run(ttest)
