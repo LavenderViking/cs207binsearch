@@ -17,6 +17,21 @@ class Test(unittest.TestCase):
 
 	def notFoundElementInRange(self):
 		self.assertEqual(binary_search(list(range(10)), 2,5,8), -1)
+
+	def unsortedList(self):
+		self.assertEqual(binary_search([1,6,2,9,8], 9), 3)
+
+	def noElement(self:
+		self.assertEqual(binary_search([], 1), -1)
+	
+	def singleElement(self:
+		self.assertEqual(binary_search([1], 1), 0)
+
+	def sameElements(self:
+		self.assertEqual(binary_search([1,2,5,6,7,8,2,2], 2), 7)
+	
+	
+
 	
 
 t = unittest.TestLoader().loadTestsFromModule(Test())
