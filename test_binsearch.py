@@ -45,9 +45,15 @@ class Test(unittest.TestCase):
 	def nan(self):
 		self.assertEqual(binary_search([1,2, np.nan, 3,4], 3), 2)
 
-	
-	
+	def listwithIntsAndStrings(self):
+		self.assertEqual(binary_search([1,2, "dad", 3,4], 3), -1)
 
+	def notArray(self):
+		try:
+			self.assertEqual(binary_search('1 2 3 4 dad 5 6 7 8',5), 5)
+		expect:
+			print("Please input an array!")
+			
 	
 
 t = unittest.TestLoader().loadTestsFromModule(Test())
