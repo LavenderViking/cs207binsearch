@@ -39,6 +39,12 @@ class Test(unittest.TestCase):
 	def needleTest3(self):
 		self.assertEqual(binary_search([1,2,3,4,5], 3,3,4), -1)
 
+	def inf(self):
+		self.assertEqual(binary_search([1,2, np.inf, 3,4], 3), 3)
+
+	def nan(self):
+		self.assertEqual(binary_search([1,2, np.nan, 3,4], 3), 2)
+
 	
 	
 
