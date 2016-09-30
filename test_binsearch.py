@@ -11,5 +11,4 @@ class MyTest(unittest.TestCase):
 		self.assertEqual(binary_search(sorted_num_list, 2), 2)
 
 
-suite = unittest.TestLoader().loadTestsFromModule(MyTest())
-unittest.TextTestRunner().run(suite)
+unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(MyTest()))
