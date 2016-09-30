@@ -1,7 +1,7 @@
 import unittest
 from pytest import raises
 import numpy as np
-from binarysearch import binary_search
+from binsearch import binary_search
 
 
 class MyTest(unittest.TestCase):
