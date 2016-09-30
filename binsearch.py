@@ -1,5 +1,3 @@
-from doctest import run_docstring_examples as dtest
-
 def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
     """
     An algorithm that operates in O(lg(n)) to search for an element
@@ -88,14 +86,3 @@ def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
         else:
             index = midpoint
             return index
-
-
-
-
-
-def main():
-
-	dtest(binary_search, globals(), verbose=True)
-
-
-if __name__ == "__main__": main()
