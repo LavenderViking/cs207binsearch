@@ -9,5 +9,5 @@ class Test(unittest.TestCase):
 	def foundElement(self):
 		self.assertEqual(binary_search(list(range(5), 2), 2)
 
-
-unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(MyTest()))
+ttest = unittest.TestLoader().loadTestsFromModule(MyTest())
+unittest.TextTestRunner().run(ttest)
