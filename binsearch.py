@@ -1,7 +1,7 @@
 def binary_search(da_array: list, needle, left:int=0, right:int=-1) -> int:
     """
     An algorithm that operates in O(lg(n)) to search for an element
-    in an array sorted in ascending order.
+    in an array sorted in ascending order. 
     
     Parameters
     ---------- 
